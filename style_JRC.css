@@ -355,6 +355,81 @@ body {
   }
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    position: relative;
+  }
+
+  .sidebar img {
+    width: 40px;
+    margin-bottom: 0;
+  }
+
+  .sidebar nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .sidebar nav ul li {
+    margin: 0;
+  }
+
+  .perspective {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .hover-title {
+    font-size: 4rem;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .info-container ul {
+    width: 100%;
+  }
+
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin: 1rem;
+  }
+
+  .profile .intro h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hover-title {
+    font-size: 3rem;
+  }
+
+  .card h2 {
+    font-size: 1.25rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+
+  .sidebar nav ul li a {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
+
+
 /* ------------------------------- */
 /* Contact Section                 */
 /* ------------------------------- */
