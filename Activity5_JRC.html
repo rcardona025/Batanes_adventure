@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Integrated Portfolio</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style_JRC.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <img src="imgs/logo%20ICT.png" alt="Logo" />
+    <nav>
+      <ul>
+        <li><a href="#profile">Main</a></li>
+        <li><a href="#adventure-map">Map</a></li>
+        <li><a href="#adventure-section">Adventure Section</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content Container -->
+  <main class="perspective effect-rotate-left">
+    <section class="container">
+      <!-- Header / Profile Section -->
+      <header id="profile" class="profile">
+        <div class="intro">
+          <h1>Welcome <span class="highlight"><i><strong>ADVENTURER!</strong></i></span></h1>
+          <p><em>Explore the island like never before — discover thrilling hiking trails, scenic biking routes, and exciting outdoor sports all in one hub.</em></p>
+        </div>
+          
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          
+        <div class="hover-title">
+          <span style="--hover-color: #2ecc71;">B</span>
+          <span style="--hover-color: #27ae60;">A</span>
+          <span style="--hover-color: #1abc9c;">T</span>
+          <span style="--hover-color: #16a085;">A</span>
+          <span style="--hover-color: #2ecc71;">N</span>
+          <span style="--hover-color: #27ae60;">E</span>
+          <span style="--hover-color: #1abc9c;">S</span>
+        </div>
+          
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        
+        <section id="adventure-map" style="padding: 40px 0;">
+          <h2 style="text-align: center;">Batanes Adventure Map</h2>
+          <div id="map-adventure" style="height: 500px; margin: 20px auto; width: 90%; border-radius: 12px;"></div>
+        </section>
+
+        <div class="info-container">
+          <ul>
+            <li><i class="fas fa-mountain"></i> <strong>Mt. Iraya Hike:</strong> Climb Batanes’ iconic dormant volcano and witness breathtaking views of the island.</li>
+            <li><i class="fas fa-bicycle"></i> <strong>Around Batan Bike Trail:</strong> A scenic coastal route perfect for cycling enthusiasts.</li>
+            <li><i class="fas fa-water"></i> <strong>Sabtang Island Excursion:</strong> Experience boat rides, and pristine beaches.</li>
+            <li><i class="fas fa-map-marked-alt"></i> <strong>Interactive Adventure Map:</strong> Discover curated routes and outdoor destinations on our live map.</li>
+          </ul>
+          <ul>
+            <li><i class="fas fa-calendar-alt"></i> <strong>Local Adventure Events:</strong> Join seasonal festivals and outdoor group events.</li>
+            <li><i class="fas fa-shield-alt"></i> <strong>Safety First:</strong> Access emergency contacts, weather tips, and gear checklists.</li>
+            <li><i class="fas fa-star"></i> <strong>Top Picks:</strong> Visit must-see spots like Marlboro Hills, Vayang Rolling Hills, and Valugan Boulder Beach.</li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- The rest of your sections (About, Social Links, Photos, Contact) unchanged -->
+
+    </section>
+  </main>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- Initialize the adventure map only -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const baseLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors',
+      });
+
+      const adventureMap = L.map('map-adventure').setView([20.4475, 121.9702], 13);
+      baseLayer.addTo(adventureMap);
+    });
+  </script>
+    
+    <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+    
+     <section id="adventure-section" class="adventure-section">
+  <h1>Explore Batanes Adventures</h1>
+
+  <article class="card">
+    <h2>Mt. Iraya Hike</h2>
+      <img src="imgs/iraya.jpg" alt="Mt. Iraya Hike" />
+      <p>Embark on a challenging trek up Batanes' iconic dormant volcano, Mt. Iraya. The journey begins just beyond Basco Airport, leading you through dense forests teeming with unique flora and fauna. After approximately two hours, you'll reach the summit, offering panoramic views of the island and the West Philippine Sea. A permit from the DENR is required, and hiring a local guide is strongly recommended for safety.</p>
+  </article>
+
+  <article class="card">
+    <h2>Around Batan Bike Trail</h2>
+      <img src="imgs/biking.jpg" alt="Around Batan Bike Trail" />
+      <p>Experience the scenic beauty of Batan Island on a 41-kilometer coastal bike loop. This trail starts from Basco and passes through Mahatao, Ivana, and Uyugan, featuring landmarks like Marlboro Hills and Tayid Lighthouse. With mostly paved roads and gentle slopes, it’s perfect for cycling enthusiasts of all levels.</p>
+  </article>
+
+  <article class="card">
+    <h2>Sabtang Island Excursion</h2>
+      <img src="imgs/sabtang.jpg" alt="Sabtang Island Excursion" />
+      <p>Discover the rustic charm of Sabtang Island via a short boat ride from Batan. Explore traditional Ivatan villages like Savidug and Chavayan, relax on Morong Beach, and visit iconic sights such as Chamantad-Tinyan Viewpoint and the Sabtang Lighthouse.</p>
+  </article>
+
+  <article class="card">
+    <h2>Local Adventure Events</h2>
+      <img src="imgs/festival.jpg" alt="Local Adventure Events" />
+      <p>Immerse yourself in local culture through seasonal Ivatan festivals and outdoor group events. These gatherings offer a unique glimpse into Batanes' heritage and traditions.</p>
+  </article>
+
+  <article class="card">
+    <h2>Safety First</h2>
+      <img src="imgs/safety.jpg" alt="Safety Tips" />
+      <p>Stay safe during your adventure with emergency contacts, weather advisories, and essential gear checklists. Keep updated and prepared for any situation while exploring the outdoors.</p>
+  </article>
+
+  <article class="card">
+    <h2>Top Picks</h2>
+      <img src="imgs/top-picks.jpg" alt="Top Picks in Batanes" />
+      <p>Don't miss iconic spots such as Marlboro Hills, Vayang Rolling Hills, and Valugan Boulder Beach — each offering a unique scenic and cultural experience.</p>
+  </article>
+</section>
+    
+    <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+    <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+    <section id="contact-section" class="contact">
+  <h2>Contact Us</h2>
+  <p>Have questions, suggestions, or want to share your own Batanes adventure? We'd love to hear from you!</p>
+
+  <form>
+    <input type="text" class="input" placeholder="Your Name" required />
+    <input type="email" class="input" placeholder="Your Email" required />
+    <textarea class="input" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+    <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+    
+</body>
+</html>
