@@ -679,23 +679,41 @@
       background: #222;
       margin-top: 40px;
     }
-
 .site-footer {
-  background-color: #0c0c0c;
+  background-color: #121212;
   color: #ccc;
   text-align: center;
-  padding: 1.5rem 1rem;
+  padding: 2rem 1rem;
   font-size: 1rem;
-  border-top: 1px solid #444;
+  border-top: 1px solid #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.site-footer p {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
 }
 
 .site-footer ul {
   list-style: none;
   padding: 0;
-  margin: 0.5rem 0 0 0;
+  margin: 0;
 }
 
 .site-footer li {
-  margin: 4px 0;
+  margin: 8px 0;
 }
 
+.site-footer a {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.site-footer a:hover {
+  color: #80e27e;
+  transform: scale(1.05);
+  text-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
